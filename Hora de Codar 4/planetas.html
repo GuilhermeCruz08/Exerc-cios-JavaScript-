@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificar Planeta</title>
+</head>
+<body>
+
+<script>
+
+    var planetas = ["Terra", "Marte", "Plutão", "Vênus", "Júpiter", "Saturno"];
+
+    var planetaUsuario = prompt("Digite o nome de um planeta:");
+
+    if (planetas.includes(planetaUsuario)) {
+        alert("Sim, " + planetaUsuario + " está na lista de planetas!");
+    } else {
+        alert("Não, " + planetaUsuario + " não está na lista de planetas.");
+    }
+
+</script>
+
+</body>
+</html>

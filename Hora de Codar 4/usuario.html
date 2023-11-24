@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Estudantes</title>
+</head>
+<body>
+
+<script>
+
+    function cadastrarEstudantes() {
+        var estudantes = [];
+
+        while (true) {
+            var nome = prompt("Digite o nome do estudante (ou 'PARE' para encerrar):");
+
+            if (nome === null || nome.toUpperCase() === 'PARE') {
+                break;
+            }
+
+            estudantes.push(nome);
+        }
+
+        alert("Quantidade de estudantes cadastrados: " + estudantes.length);
+
+        alert("Lista de estudantes cadastrados:\n" + estudantes.join("\n"));
+    }
+
+    cadastrarEstudantes();
+    
+</script>
+
+</body>
+</html>
